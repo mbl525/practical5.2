@@ -18,5 +18,7 @@ public class OpenDoor : MonoBehaviour
         GameObject parent = transform.parent.gameObject;       
         Animation animation = parent.GetComponent<Animation>();       
         animation.Play("OpenDoor");
+        AudioSource od = GetComponent<AudioSource>();
+        od.Play();
     }
 }
